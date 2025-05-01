@@ -7,8 +7,8 @@ const Layout = () => {
     <main>
       <Navbar />
       <Outlet />
-      <Newsletter />
-      <Footer />
+      {/* <Newsletter />
+      <Footer /> */}
     </main>
   );
 };

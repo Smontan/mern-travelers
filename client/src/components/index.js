@@ -11,3 +11,5 @@ export { default as NearbyProperties } from "./NearbyProperties";
 export { default as Newsletter } from "./Newsletter";
 export { default as RentalGuides } from "./RentalGuides";
 export { default as TopRatedProperties } from "./TopRatedProperties";
+export { default as Dropdown } from "./Dropdown";
+export { default as Logo } from "./Logo";

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* Primary Color: Forest Green (#2E7D32)
+  Secondary Color: Sky Blue (#81D4FA)
+  Accent Color: Sunset Orange (#FF7043)
+  Background Color: Soft Beige (#F5F5DC)
+  Text Color: Dark Brown (#4E342E) */
+  --primary-color: #2e7d32;
+  --secondary-color: #81d4fa;
+  --accent-color: #ff7043;
+  --background-color: #f5f5dc;
+  --text-color: #4e342e;
+}
+@theme {
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-accent: var(--accent-color);
+  --color-background: var(--background-color);
+  --color-text: var(--text-color);
+  --color-border: #DCDCC6;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

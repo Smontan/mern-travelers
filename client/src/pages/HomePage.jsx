@@ -14,7 +14,7 @@ import {
 const HomePage = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero />
       <LatestProperty />
       <NearbyProperties />
       <TopRatedProperties />
@@ -23,7 +23,7 @@ const HomePage = () => {
       <FindProperty />
       <RentalGuides />
       <DownloadApp />
-      <DiscoverMoreProperty />
+      <DiscoverMoreProperty /> */}
     </div>
   );
 };
