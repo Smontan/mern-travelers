@@ -34,8 +34,28 @@
   }
   .underline-border:hover::after {
     @apply scale-100
+
+  }.title-underline-border {
+    @apply relative cursor-pointer;
   }
 
+  .title-underline-border::after {
+    @apply content-[''] absolute left-0 -bottom-[24px] h-[6px] w-[50%] rounded-full bg-current scale-0 transition-transform duration-300 origin-left;
+  }
+  .title-underline-border:hover::after {
+    @apply scale-100
+  }
+
+  .text-overflow-ellipsis {
+    @apply whitespace-nowrap overflow-hidden overflow-ellipsis
+  }
+
+}
+
+@layer base {
+  *:focus {
+    @apply outline-none ring-2 ring-accent
+  }
 }
 
 body {
