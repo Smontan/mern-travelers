@@ -13,3 +13,4 @@ export { default as RentalGuides } from "./RentalGuides";
 export { default as TopRatedProperties } from "./TopRatedProperties";
 export { default as Dropdown } from "./Dropdown";
 export { default as Logo } from "./Logo";
+export { default as SearchBar } from "./SearchBar";

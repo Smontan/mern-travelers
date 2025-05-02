@@ -12,6 +12,7 @@
   --accent-color: #ff7043;
   --background-color: #f5f5dc;
   --text-color: #4e342e;
+  --dark-color: #4e342e;
 }
 @theme {
   --color-primary: var(--primary-color);
@@ -19,7 +20,22 @@
   --color-accent: var(--accent-color);
   --color-background: var(--background-color);
   --color-text: var(--text-color);
-  --color-border: #DCDCC6;
+  --color-border: #dcdcc6;
+  --hero-image: url("https://plus.unsplash.com/premium_photo-1683120698590-7e21c5ff1b5b?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+@layer utilities {
+  .underline-border {
+    @apply relative cursor-pointer;
+  }
+
+  .underline-border::after {
+    @apply content-[''] absolute left-0 -bottom-[2px] h-[2px] w-[75%] rounded-full bg-current scale-0 transition-all duration-300 origin-left;
+  }
+  .underline-border:hover::after {
+    @apply scale-100
+  }
+
 }
 
 body {
@@ -27,7 +43,50 @@ body {
   color: var(--text-color);
   font-family: "Montserrat", sans-serif;
 }
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+  color: var(--text-color);
+} */
 
 a {
   text-decoration: none;
+}
+
+/* Hide the up and down arrow in inputs number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* exclude second to the last border */
+.exclude-second-last-border > :nth-last-child(2) {
+  border-right: none !important;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  scale: 0;
+  right: 50%;
+  border-bottom: 2px solid white;
+  transition: all;
+  duration: 100;
+}
+
+.underline-effect:hover::after {
+  scale: 100%;
 }

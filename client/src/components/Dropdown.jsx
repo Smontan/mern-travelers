@@ -18,15 +18,15 @@ const Dropdown = ({ children, trigger }) => {
       ref={dropdownRef}
     >
       <div>{trigger}</div>
-        <ul
-          className={`absolute right-0 mt-2 p-1 border-border border rounded-lg shadow overflow-hidden transition-all duration-500 ease-in-out ${
-            show
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 -translate-y-2 pointer-events-none"
-          } `}
-        >
-          {show && children}
-        </ul>
+      <ul
+        className={`absolute right-0 mt-2 p-1 bg-background border-border border rounded-lg shadow overflow-hidden transition-all duration-500 ease-in-out ${
+          show
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-2 pointer-events-none"
+        } `}
+      >
+        {show && children}
+      </ul>
     </div>
   );
 };
