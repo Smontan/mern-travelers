@@ -58,8 +58,8 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
             className={({ isActive }) =>
               isActive
-                ? "font-semibold border-b-2 tracking-tight whitespace-nowrap lg:text-sm xl:text-base"
-                : "font-semibold tracking-tight hover:opacity-80 transition-opacity duration-200 lg:text-sm xl:text-base ease-in-out whitespace-nowrap"
+                ? "font-semibold border-b-2 border-current tracking-tight whitespace-nowrap lg:text-sm xl:text-base"
+                : "font-semibold border-b-2 border-transparent underline-border tracking-tight  transition-all duration-300 lg:text-sm xl:text-base ease-in-out whitespace-nowrap"
             }
           >
             {label}
