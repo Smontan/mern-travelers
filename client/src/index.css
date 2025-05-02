@@ -12,7 +12,8 @@
   --accent-color: #ff7043;
   --background-color: #f5f5dc;
   --text-color: #4e342e;
-  --dark-color: #4e342e;
+  --dark-text-color: #4e342e;
+  --light-text-color: #f5f5dc;
 }
 @theme {
   --color-primary: var(--primary-color);
@@ -20,6 +21,9 @@
   --color-accent: var(--accent-color);
   --color-background: var(--background-color);
   --color-text: var(--text-color);
+  --color-light-text: var(--light-text-color);
+  --color-dark-text: var(--dark-text-color);
+  
   --color-border: #dcdcc6;
   --hero-image: url("https://plus.unsplash.com/premium_photo-1683120698590-7e21c5ff1b5b?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
