@@ -47,8 +47,8 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div
-        className={`flex-col lg:flex-row lg:items-center lg:top-0 lg:mt-0 lg:static justify-between gap-6 ps-2 lg:ps-0 transition-all duration-300 ease-in-out ${
-          isOpen ? "flex absolute top-[70px] mt-5" : "hidden"
+        className={`flex-col lg:flex-row lg:items-center lg:top-0 lg:mt-0 lg:static justify-between gap-6 ps-5 py-10 lg:py-10 rounded-xl  bg-background lg:bg-transparent lg:ps-0 shadow-lg lg:shadow-none transition-transform ${
+          isOpen ? "flex absolute top-[70px] mt-5" : " hidden"
         } lg:flex`}
       >
         {navLinks.map(({ path, label }) => (

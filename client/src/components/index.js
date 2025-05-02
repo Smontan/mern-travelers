@@ -14,3 +14,4 @@ export { default as TopRatedProperties } from "./TopRatedProperties";
 export { default as Dropdown } from "./Dropdown";
 export { default as Logo } from "./Logo";
 export { default as SearchBar } from "./SearchBar";
+export { default as Title } from "./Title";

@@ -15,15 +15,17 @@ const HomePage = () => {
   return (
     <div>
       <Hero />
-      <LatestProperty />
-      <NearbyProperties />
-      <TopRatedProperties />
-      <HostInvitation />
-      <FeaturedProperties />
-      <FindProperty />
-      <RentalGuides />
-      <DownloadApp />
-      <DiscoverMoreProperty />
+      <main className="py-21 flex flex-col items-center gap-16">
+        <LatestProperty />
+        <NearbyProperties />
+        <TopRatedProperties />
+        <HostInvitation />
+        <FeaturedProperties />
+        <FindProperty />
+        <RentalGuides />
+        <DownloadApp />
+        <DiscoverMoreProperty />
+      </main>
     </div>
   );
 };
