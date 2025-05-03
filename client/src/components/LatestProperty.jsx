@@ -31,10 +31,10 @@ const LatestProperty = () => {
     },
   ];
   return (
-    <section className="container mx-auto overflow-x-auto">
+    <section className="container mx-auto">
       <Title>Latest on the Property Listing</Title>
       {/* Latest Property cards */}
-      <div className="flex mt-16 gap-7.5  mx-5 lg:mx-0 pb-8">
+      <div className="flex mt-16 gap-7.5  mx-5 lg:mx-0 pb-8 overflow-auto">
         {latestProperties?.map(
           ({ title, address, cardImg, ownerImg }, index) => (
             <PropertyCard
