@@ -11,7 +11,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <section className="w-full bg-primary">
+    <footer className="w-full bg-primary">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-between gap-6 lg:gap-12 mx-5 lg:mx-0 pt-18 pb-30 text-light-text">
           {/* Footer Header */}
@@ -124,7 +124,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 export default Footer;
