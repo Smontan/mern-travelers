@@ -12,7 +12,7 @@ const DownloadApp = () => {
           
         </p>
         <div className="space-x-3">
-          <button className="inline-flex items-center gap-2 py-4.5 px-7 mt-8 rounded-lg bg-secondary text-center text-sm font-bold shadow-lg">
+        <button className="inline-flex items-center gap-2 py-4.5 px-7 mt-8 rounded-lg bg-secondary text-center text-sm font-bold shadow-lg">
             <Play />
             PlayStore
           </button>

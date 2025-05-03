@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useClickOutside from "../hooks/useClickOutside";
 
-const Dropdown = ({ children, trigger }) => {
+const Dropdown = ({ children, trigger }, ...props) => {
   // State for showing the dropdown menu or not
   const [show, setShow] = useState(false);
   // Toggle fn for dropdown
@@ -16,6 +16,7 @@ const Dropdown = ({ children, trigger }) => {
       onClick={handleClickToggle}
       className="relative w-fit"
       ref={dropdownRef}
+      {...props}
     >
       <div>{trigger}</div>
       <ul
