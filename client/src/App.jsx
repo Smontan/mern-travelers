@@ -11,6 +11,7 @@ import {
   RentalGuidesPage,
   ShareStoriesPage,
   SignUpPage,
+  SearchResultPage
 } from "./pages";
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path={"/login"} element={<LogInPage />} />
           <Route path={"/help-center"} element={<HelpCenterPage />} />
           <Route path={"/host"} element={<HostPage />} />
+          <Route path={"/search-result"} element={<SearchResultPage />} />
         </Route>
       </Routes>
     </>

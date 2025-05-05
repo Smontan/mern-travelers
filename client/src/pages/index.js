@@ -7,3 +7,4 @@ export { default as PropertyPage } from "./PropertyPage";
 export { default as RentalGuidesPage } from "./RentalGuidesPage";
 export { default as ShareStoriesPage } from "./ShareStoriesPage";
 export { default as SignUpPage } from "./SignUpPage";
+export { default as SearchResultPage } from "./SearchResultPage";

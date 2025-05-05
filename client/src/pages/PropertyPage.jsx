@@ -1,6 +1,6 @@
 import { SlidersHorizontal } from "lucide-react";
 
-import FeaturedPropertyCard from "../components/cards/FeaturedPropertyCard"
+import FeaturedPropertyCard from "../components/cards/FeaturedPropertyCard";
 
 const PropertyPage = () => {
   return (
