@@ -42,19 +42,19 @@ const HotelDetailsPage = () => {
       {/* Photo gallery */}
       <PropertyGallery photos={hotelImg} />
       {/* Section hotel info and a card for call to action for hotel reservation */}
-      <section className="flex flex-row lg:flex-col mt-16 px-5 gap-20">
+      <section className="flex flex-col xl:flex-row mt-16 px-5 gap-20">
         {/* Hotel detail */}
-        <section className="flex-1 pb-[250px] space-y-9">
-          <header className="flex ">
+        <section className="flex-1 lg:pb-[250px] space-y-9">
+          <header className="flex flex-col lg:flex-col">
             <div className="flex-1">
-              <h1 className="font-bold text-[28px]">
+              <h1 className="font-bold text-2xl lg:text-[28px]">
                 Well furnished Apartment
               </h1>
               <p className="font-medium">100 Smart Street, LA, USA</p>
             </div>
-            <div className="flex gap-2 items-end">
-              <Heart size={32} />
-              <Share2 size={32} />
+            <div className="flex gap-2 items-end justify-end ">
+              <Heart className="w-5 lg:w-8" />
+              <Share2 className="w-5 lg:w-8" />
             </div>
           </header>
           {/* Amenity cards */}
@@ -87,7 +87,7 @@ const HotelDetailsPage = () => {
           {/* Offered Amenities */}
           <div>
             <h5 className="font-bold text-[22px] mb-6">Offered Amenities</h5>
-            <ul className="grid grid-cols-2 space-y-5">
+            <ul className="grid lg:grid-cols-2 space-y-5">
               <li className="inline-flex gap-4.5">
                 <ForkKnife /> Kitchen
               </li>
@@ -111,7 +111,7 @@ const HotelDetailsPage = () => {
           {/* Safety and hygiene */}
           <div>
             <h5 className="font-bold text-[22px] mb-6">Safty and Hygiene</h5>
-            <ul className="grid grid-cols-2 space-y-5">
+            <ul className="grid lg:grid-cols-2 space-y-5">
               <li className="inline-flex gap-4.5">
                 <ClipboardCheck /> Daily Cleaning
               </li>
@@ -134,7 +134,7 @@ const HotelDetailsPage = () => {
               Nearby Services
             </h6>
             {/* Nearby services cards */}
-            <div className="flex gap-3.5">
+            <div className="flex flex-col md:flex-row gap-3.5">
               <NearbyServicesCard />
               <NearbyServicesCard />
               <NearbyServicesCard />
@@ -151,7 +151,7 @@ const HotelDetailsPage = () => {
               5.0
             </h6>
             {/* Ratings */}
-            <ul className="grid grid-cols-2 space-x-[45px] space-y-[15px] ">
+            <ul className="grid lg:grid-cols-2 space-x-[45px] space-y-[15px] ">
               <li className="flex items-center w-fit gap-2">
                 <span className="w-[194px]">Amenities</span>
                 <span className="inline-block h-1 w-[100px] flex-1 rounded-full bg-brown" />
@@ -180,7 +180,7 @@ const HotelDetailsPage = () => {
             </ul>
           </div>
           {/* Reviews */}
-          <ul className="grid grid-cols-2 space-y-8">
+          <ul className="grid lg:grid-cols-2 space-y-8">
             <li className="space-y-5">
               <div className="flex gap-4">
                 <figure className="w-[70px] h-[70px] rounded-full overflow-hidden">
