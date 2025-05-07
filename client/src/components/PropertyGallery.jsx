@@ -9,7 +9,7 @@ const PropertyGallery = ({ photos }) => {
           src={photos[0]}
           alt=""
         />
-        <section className="absolute inset-0 flex items-end p-8 lg:p-12 space-x-5 bg-gradient-to-t from-background to-transparent">
+        <section className="absolute inset-0\ flex items-end p-8 lg:p-12 space-x-5 bg-gradient-to-t from-background to-transparent">
           <figure className=" rounded-full w-[76px] h-[76px] overflow-hidden">
             <img
               className="w-full object-cover object-center"

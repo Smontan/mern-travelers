@@ -1,17 +1,19 @@
 import { Route, Routes } from "react-router";
 
+import AuthenticationLayout from "./layouts/AuthenticationLayout";
 import Layout from "./layouts/Layout";
 import {
   DownloadMobileAppPage,
   HelpCenterPage,
   HomePage,
   HostPage,
+  HotelDetailsPage,
   LogInPage,
   PropertyPage,
   RentalGuidesPage,
+  SearchResultPage,
   ShareStoriesPage,
   SignUpPage,
-  SearchResultPage, HotelDetailsPage
 } from "./pages";
 
 const App = () => {
@@ -27,12 +29,14 @@ const App = () => {
           <Route path={"/find-property"} element={<PropertyPage />} />
           <Route path={"/rental-guides"} element={<RentalGuidesPage />} />
           <Route path={"/share-stories"} element={<ShareStoriesPage />} />
-          <Route path={"/signup"} element={<SignUpPage />} />
-          <Route path={"/login"} element={<LogInPage />} />
           <Route path={"/help-center"} element={<HelpCenterPage />} />
           <Route path={"/host"} element={<HostPage />} />
           <Route path={"/search-result"} element={<SearchResultPage />} />
           <Route path={"/hotel/:hotelName"} element={<HotelDetailsPage />} />
+        </Route>
+        <Route element={<AuthenticationLayout />}>
+          <Route path={"/signup"} element={<SignUpPage />} />
+          <Route path={"/login"} element={<LogInPage />} />
         </Route>
       </Routes>
     </>
