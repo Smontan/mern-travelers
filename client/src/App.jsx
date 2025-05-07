@@ -11,7 +11,7 @@ import {
   RentalGuidesPage,
   ShareStoriesPage,
   SignUpPage,
-  SearchResultPage
+  SearchResultPage, HotelDetailsPage
 } from "./pages";
 
 const App = () => {
@@ -32,6 +32,7 @@ const App = () => {
           <Route path={"/help-center"} element={<HelpCenterPage />} />
           <Route path={"/host"} element={<HostPage />} />
           <Route path={"/search-result"} element={<SearchResultPage />} />
+          <Route path={"/hotel/:hotelName"} element={<HotelDetailsPage />} />
         </Route>
       </Routes>
     </>

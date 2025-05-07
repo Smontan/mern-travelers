@@ -24,9 +24,9 @@ const SearchResultCard = () => {
             </figure>
             {/* Property owner and price */}
             <section className="leading-4 my-auto">
-              <span className="font-md text-xs">listed by:</span>
+              <span className="font-medium text-xs">listed by:</span>
               <h6 className="font-bold text-lg">John Doe</h6>
-              <p className="font-md">For: $1000 - $5000</p>
+              <p className="font-medium">For: $1000 - $5000</p>
             </section>
           </section>
           {/* image indicator */}
@@ -40,7 +40,7 @@ const SearchResultCard = () => {
       </figure>
       <section className="py-7.5 px-6.5">
         <h5 className="font-bold text-lg">Well Furnished Apartment</h5>
-        <p className="font-md text-xs">100 Smart Street, LA, USA</p>
+        <p className="font-medium text-xs">100 Smart Street, LA, USA</p>
         <ul className="flex gap-5 items-baseline mt-3">
           <li className="inline-flex gap-1.5">
             <Bed /> <span className="font-semibold">3</span>

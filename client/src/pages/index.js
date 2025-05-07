@@ -8,3 +8,4 @@ export { default as RentalGuidesPage } from "./RentalGuidesPage";
 export { default as ShareStoriesPage } from "./ShareStoriesPage";
 export { default as SignUpPage } from "./SignUpPage";
 export { default as SearchResultPage } from "./SearchResultPage";
+export { default as HotelDetailsPage } from "./HotelDetailsPage";

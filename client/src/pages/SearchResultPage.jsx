@@ -1,6 +1,6 @@
 import { SlidersHorizontal, X } from "lucide-react";
-import SearchResultCard from "../components/cards/SearchResultCard";
 import MapCard from "../components/cards/MapCard";
+import SearchResultCard from "../components/cards/SearchResultCard";
 
 const SearchResultPage = () => {
   return (
@@ -12,13 +12,13 @@ const SearchResultPage = () => {
           <section className="flex flex-col lg:flex-row items-start justify-between lg:gap-0 bg-yellow">
             {/* Make the number of result dynamic */}
             <ul className="flex flex-wrap items-end gap-2  lg:gap-2 font-semibold">
-              <li className="rounded-full px-4 py-2  inline-flex items-center gap-4 whitespace-nowrap border-2 border-border font-md text-xs">
+              <li className="rounded-full px-4 py-2  inline-flex items-center gap-4 whitespace-nowrap border-2 border-border font-medium text-xs">
                 100 Smart Street <X size={16} />
               </li>
-              <li className="rounded-full px-4 py-2  inline-flex items-center gap-4 whitespace-nowrap border-2 border-border font-md text-xs">
+              <li className="rounded-full px-4 py-2  inline-flex items-center gap-4 whitespace-nowrap border-2 border-border font-medium text-xs">
                 12 March 2021 <X size={16} />
               </li>
-              <li className="rounded-full px-4 py-2  inline-flex items-center gap-4 whitespace-nowrap border-2 border-border font-md text-xs">
+              <li className="rounded-full px-4 py-2  inline-flex items-center gap-4 whitespace-nowrap border-2 border-border font-medium text-xs">
                 Short period <X size={16} />
               </li>
             </ul>
@@ -44,7 +44,7 @@ const SearchResultPage = () => {
         <article className="sticky top-0 h-[736px] bg-yellow-600 -z-50 ">
           {/* TODO: make this map dynamic and change the details according to the card that is being rendered */}
           <div className="w-full h-full justify-center flex items-end pb-29 ">
-            <MapCard />  
+            <MapCard />
           </div>
         </article>
       </section>
