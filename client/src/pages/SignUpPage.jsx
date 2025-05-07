@@ -5,9 +5,14 @@ import { Logo } from "../components";
 
 const SignUpPage = () => {
   return (
-    <section className=" h-full flex-1 pt-5 pe-[212px]">
+    <section className=" h-full flex-1 pt-5">
       {/* Logo section */}
-      <Logo />
+      <div className="flex justify-between items-end">
+        <Logo />
+        <Link to={"/"} className="border-b capitalize text-sm font-semibold ">
+          back home
+        </Link>
+      </div>
 
       <div className="mt-5 max-w-[340px]">
         <h1 className="font-bold text-[32px] capitalize">
@@ -30,7 +35,7 @@ const SignUpPage = () => {
           <label className="w-full rounded px-4 py-2 space-y-1 bg-white">
             <span className="block text-xs uppercase">Email</span>
             <input
-              type="text"
+              type="email"
               className="w-full focus:ring-0 focus:outline-none text-sm"
               placeholder="yourmail@email.com"
             />
@@ -38,7 +43,7 @@ const SignUpPage = () => {
           <label className="w-full rounded px-4 py-2 space-y-1 bg-white">
             <span className="block text-xs uppercase">Password</span>
             <input
-              type="text"
+              type="password"
               className="w-full focus:ring-0 focus:outline-none text-sm"
               placeholder="***********"
             />

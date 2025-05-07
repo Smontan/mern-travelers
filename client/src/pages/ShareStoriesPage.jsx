@@ -1,6 +1,6 @@
 const ShareStoriesPage = () => {
   return (
-    <div>ShareStoriesPage</div>
+    <section className="container mx-auto mt-40 mb-20">ShareStoriesPage</section>
   )
 }
 export default ShareStoriesPage
