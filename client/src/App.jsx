@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router";
 
+import ScrollToTop from "./components/ScrollToTop";
 import AuthenticationLayout from "./layouts/AuthenticationLayout";
 import Layout from "./layouts/Layout";
 import {
@@ -19,6 +20,7 @@ import {
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
