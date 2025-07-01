@@ -9,8 +9,8 @@ const FeaturedPropertyCard = () => {
     setFavorite((prev) => !prev);
   };
   return (
-    <div className="min-w-[382px] pt-2 pb-7">
-      <div className="relative h-[340px] overflow-hidden rounded-lg border-border border-2">
+    <div className=" max-w-[382px] pt-2 pb-7">
+      <div className="relative h-[340px] overflow-hidden rounded-lg border-border border-2 cursor-pointer">
         <img
           src={bgImg}
           alt=""

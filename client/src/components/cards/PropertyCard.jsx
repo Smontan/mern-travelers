@@ -9,7 +9,7 @@ const PropertyCard = ({ cardImg, ownerImg, title, address, ...props }) => {
   return (
     <div
       {...props}
-      className="h-[340px] max-w-xs min-w-[279px] relative border-border border-2 rounded-lg group overflow-hidden shadow-lg"
+      className="h-[340px] max-w-xs min-w-[279px] relative border-border border-2 rounded-lg group overflow-hidden shadow-lg "
     >
       <button className="absolute top-4 right-4 z-50 p-1 rounded w-fit">
         <Heart

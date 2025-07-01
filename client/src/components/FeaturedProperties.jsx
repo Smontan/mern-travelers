@@ -7,7 +7,7 @@ const FeaturedProperties = () => {
       <Title>Latest on the Property Listing</Title>
 
       {/* Featured Property cards */}
-      <div className="flex lg:grid lg:grid-cols-3 mx-5 lg:mx-0 mt-16 gap-8.5 pb-8 overflow-auto">
+      <div className="flex flex-wrap lg:grid lg:grid-cols-3 mx-5 lg:mx-0 mt-16 gap-8.5 pb-8 overflow-auto">
         <FeaturedPropertyCard />
         <FeaturedPropertyCard />
         <FeaturedPropertyCard />

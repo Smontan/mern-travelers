@@ -20,7 +20,7 @@ const LogInPage = () => {
           Continue to your account
         </h1>
       </div>
-      <button className="inline-flex items-center gap-2 rounded-full mt-6 py-4 px-25 bg-[#CEEAF7] text-sm font-semibold">
+      <button className="inline-flex items-center gap-2 rounded-full mt-6 py-4 px-25 bg-[#CEEAF7] text-sm font-semibold whitespace-nowrap">
         <Gamepad2 /> Sign up with Google
       </button>
       {/* divider */}

@@ -66,7 +66,7 @@ const ShareStoriesPage = () => {
         </div>
       </div>
       {/* View story */}
-      <div className="flex-1 h-[520px] rounded-2xl bg-red-500"></div>
+      <div className="flex-1 h-[520px] rounded-2xl bg-gray"></div>
     </section>
   );
 };
